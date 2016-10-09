@@ -60,18 +60,29 @@ func math2(array: [Int], op: ([Int]) -> Double) -> Double {
     return op(array)
 }
 
-print(math2(array: [5, 4, 3], op: avg))
-
 func addPoints(x1: Int, y1: Int, x2: Int, y2: Int) -> (x: Int, y: Int) {
-    let point1 = (x1: x1,y1:  y1)
-    let point2 = (x2: x2, y2: y2)
-    let point = (point1.x1 - point2.x2, point1.y1 - point2.y2)
-    return point
-}
-
-func subtractPoints(x: Int, y: Int) -> (x: Int, y: Int) {
-    var point = (x: x,y:  y)
+    //let point1: (x1: Int, y1: Int) = (x1, y1)
+    //let point2: (x2: Int, y2: Int) = (x2, y2)
+    //print(point1.x1)
+    //print(point1.y1)
+    let x = x1 + x2
+    let y = y1 + y2
     return (x, y)
 }
 
+func subtractPoints(x1: Int, y1: Int, x2: Int, y2: Int) -> (x: Int, y: Int) {
+    //let point1 = (x1: x1,y1:  y1)
+    //let point2 = (x2: x2, y2: y2)
+    //let point = (point1.x1 - point2.x2, point1.y1 - point2.y2)
+    let x = x1 - x2
+    let y = y1 - y2
+    return (x, y)
+}
 
+func addPoints2() {
+
+}
+
+func subtractPoints2() {
+    
+}
