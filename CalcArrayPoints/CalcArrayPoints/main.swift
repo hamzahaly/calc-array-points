@@ -79,10 +79,24 @@ func subtractPoints(x1: Int, y1: Int, x2: Int, y2: Int) -> (x: Int, y: Int) {
     return (x, y)
 }
 
-func addPoints2() {
-
+func addPoints2(x1: Double, y1: Double, x2: Double, y2: Double) -> ([String: Double]) {
+    let x = x1 + x2
+    let y = y1 + y2
+    let dictionary: [String: Double] = [
+        "x" : x,
+        "y" : y
+    ]
+    return dictionary
 }
 
-func subtractPoints2() {
-    
+func subtractPoints2(x1: Double, y1: Double, x2: Double, y2: Double) -> ([String: Double]) {
+    let x = x1 - x2
+    let y = y1 - y2
+    let dictionary: [String: Double] = [
+        "x" : x,
+        "y" : y
+    ]
+    return dictionary
 }
+
+print(subtractPoints2(x1: 5, y1: 4, x2: 4, y2: 3))
