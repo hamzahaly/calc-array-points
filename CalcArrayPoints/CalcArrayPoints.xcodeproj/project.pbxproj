@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49475AD21DA9D4D800C664CA /* CalcArrayPointsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49475AD11DA9D4D800C664CA /* CalcArrayPointsUnitTests.swift */; };
+		49475AE51DAC736500C664CA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E6A8F41DA9986D00489C6B /* main.swift */; };
+		49475AE61DAC737800C664CA /* CalcArrayPointsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49475AD11DA9D4D800C664CA /* CalcArrayPointsUnitTests.swift */; };
 		49E6A8F51DA9986D00489C6B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E6A8F41DA9986D00489C6B /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -174,7 +175,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49475AD21DA9D4D800C664CA /* CalcArrayPointsUnitTests.swift in Sources */,
+				49475AE51DAC736500C664CA /* main.swift in Sources */,
+				49475AE61DAC737800C664CA /* CalcArrayPointsUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +331,7 @@
 				49475ACD1DA9D39800C664CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49E6A8EC1DA9986D00489C6B /* Build configuration list for PBXProject "CalcArrayPoints" */ = {
 			isa = XCConfigurationList;
