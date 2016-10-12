@@ -30,6 +30,7 @@ func mathOperation(left: Int, right: Int, operation: (Int, Int) -> Int) -> Int {
     return operation(left, right)
 }
 
+
 func add(array: [Int]) -> Int {
     var sum: Int = 0
     sum = array.reduce(0, +)
@@ -48,7 +49,7 @@ func count(array: [Int]) -> Double {
     return count
 }
 
-func avg(array: [Int]) -> Double {
+func average(array: [Int]) -> Double {
     var avg: Double = 0.0
     var sum: Int = 0
     sum = array.reduce(0, +)
@@ -56,47 +57,66 @@ func avg(array: [Int]) -> Double {
     return avg
 }
 
-func math2(array: [Int], op: ([Int]) -> Double) -> Double {
-    return op(array)
+func reduce(array: [Int], operation: ([Int]) -> Int) -> Int {
+    return operation(array)
 }
 
-func addPoints(x1: Int, y1: Int, x2: Int, y2: Int) -> (x: Int, y: Int) {
-    //let point1: (x1: Int, y1: Int) = (x1, y1)
-    //let point2: (x2: Int, y2: Int) = (x2, y2)
-    //print(point1.x1)
-    //print(point1.y1)
-    let x = x1 + x2
-    let y = y1 + y2
-    return (x, y)
+func add(p1: (Int, Int), p2: (Int, Int)) -> (x: Int, y: Int) {
+    return ((p1.0 + p2.0), (p1.1 + p2.1))
 }
 
-func subtractPoints(x1: Int, y1: Int, x2: Int, y2: Int) -> (x: Int, y: Int) {
-    //let point1 = (x1: x1,y1:  y1)
-    //let point2 = (x2: x2, y2: y2)
-    //let point = (point1.x1 - point2.x2, point1.y1 - point2.y2)
-    let x = x1 - x2
-    let y = y1 - y2
-    return (x, y)
+func subtract(p1: (Int, Int), p2: (Int, Int)) -> (x: Int, y: Int) {
+    return ((p1.0 - p2.0), (p1.1 - p2.1))
 }
 
-func addPoints2(x1: Double, y1: Double, x2: Double, y2: Double) -> ([String: Double]) {
-    let x = x1 + x2
-    let y = y1 + y2
-    let dictionary: [String: Double] = [
-        "x" : x,
-        "y" : y
-    ]
-    return dictionary
+func add(p1: [String: Int]?, p2: [String: Int]?) -> ([String: Int]?) {
+    if (p1?["x"] == nil || p1?["y"] == nil || p2?["x"] == nil || p2?["y"] == nil) {
+        return nil
+    } else {
+        let x = p1!["x"]! + p2!["x"]!
+        let y = p1!["y"]! + p2!["y"]!
+        return [
+            "x": x,
+            "y": y
+        ]
+    }
 }
 
-func subtractPoints2(x1: Double, y1: Double, x2: Double, y2: Double) -> ([String: Double]) {
-    let x = x1 - x2
-    let y = y1 - y2
-    let dictionary: [String: Double] = [
-        "x" : x,
-        "y" : y
-    ]
-    return dictionary
+func subtract(p1: [String: Int]?, p2: [String: Int]?) -> ([String: Int]?) {
+    if (p1?["x"] == nil || p1?["y"] == nil || p2?["x"] == nil || p2?["y"] == nil) {
+        return nil
+    } else {
+        let x = p1!["x"]! - p2!["x"]!
+        let y = p1!["y"]! - p2!["y"]!
+        return [
+            "x": x,
+            "y": y
+        ]
+    }
 }
 
-print(subtractPoints2(x1: 5, y1: 4, x2: 4, y2: 3))
+func add(p1: [String: Double]?, p2: [String: Double]?) -> ([String: Double]?) {
+    if (p1?["x"] == nil || p1?["y"] == nil || p2?["x"] == nil || p2?["y"] == nil) {
+        return nil
+    } else {
+        let x = p1!["x"]! + p2!["x"]!
+        let y = p1!["y"]! + p2!["y"]!
+        return [
+            "x": x,
+            "y": y
+        ]
+    }
+}
+
+func subtract(p1: [String: Double]?, p2: [String: Double]?) -> ([String: Double]?) {
+    if (p1?["x"] == nil || p1?["y"] == nil || p2?["x"] == nil || p2?["y"] == nil) {
+        return nil
+    } else {
+        let x = p1!["x"]! - p2!["x"]!
+        let y = p1!["y"]! - p2!["y"]!
+        return [
+            "x": x,
+            "y": y
+        ]
+    }
+}
