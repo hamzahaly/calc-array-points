@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		49475AE51DAC736500C664CA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E6A8F41DA9986D00489C6B /* main.swift */; };
-		49475AE61DAC737800C664CA /* CalcArrayPointsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49475AD11DA9D4D800C664CA /* CalcArrayPointsUnitTests.swift */; };
 		49E6A8F51DA9986D00489C6B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E6A8F41DA9986D00489C6B /* main.swift */; };
+		9DB4ACC31DADDB6800741C2A /* CalcArrayPointsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACC21DADDB6800741C2A /* CalcArrayPointsUnitTests.swift */; };
+		9DB4ACC51DADDBA200741C2A /* CalcArrayPointsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACC41DADDBA200741C2A /* CalcArrayPointsUnitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,9 +28,10 @@
 /* Begin PBXFileReference section */
 		49475AC71DA9D39800C664CA /* CalcArrayPointsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalcArrayPointsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49475ACB1DA9D39800C664CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49475AD11DA9D4D800C664CA /* CalcArrayPointsUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalcArrayPointsUnitTests.swift; path = ../../../../Desktop/CalcArrayPointsUnitTests.swift; sourceTree = "<group>"; };
 		49E6A8F11DA9986D00489C6B /* CalcArrayPoints */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CalcArrayPoints; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E6A8F41DA9986D00489C6B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9DB4ACC21DADDB6800741C2A /* CalcArrayPointsUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalcArrayPointsUnitTests.swift; path = ../../../CalcArrayPointsUnitTests.swift; sourceTree = "<group>"; };
+		9DB4ACC41DADDBA200741C2A /* CalcArrayPointsUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalcArrayPointsUnitTests.swift; path = ../../../CalcArrayPointsUnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,8 @@
 		49475AC81DA9D39800C664CA /* CalcArrayPointsTests */ = {
 			isa = PBXGroup;
 			children = (
-				49475AD11DA9D4D800C664CA /* CalcArrayPointsUnitTests.swift */,
+				9DB4ACC41DADDBA200741C2A /* CalcArrayPointsUnitTests.swift */,
+				9DB4ACC21DADDB6800741C2A /* CalcArrayPointsUnitTests.swift */,
 				49475ACB1DA9D39800C664CA /* Info.plist */,
 			);
 			path = CalcArrayPointsTests;
@@ -176,7 +179,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				49475AE51DAC736500C664CA /* main.swift in Sources */,
-				49475AE61DAC737800C664CA /* CalcArrayPointsUnitTests.swift in Sources */,
+				9DB4ACC31DADDB6800741C2A /* CalcArrayPointsUnitTests.swift in Sources */,
+				9DB4ACC51DADDBA200741C2A /* CalcArrayPointsUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

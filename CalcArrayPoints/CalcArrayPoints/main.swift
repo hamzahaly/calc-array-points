@@ -10,33 +10,33 @@ import Foundation
 
 print("Hello, World!")
 
-func add(operand1: Int, operand2: Int) -> Int {
-    return operand1 + operand2
+func add(left: Int, right: Int) -> Int {
+    return left + right
 }
 
-func subtract(operand1: Int, operand2: Int) -> Int {
-    return operand1 - operand2
+func subtract(left: Int, right: Int) -> Int {
+    return left - right
 }
 
-func multiply(operand1: Int, operand2: Int) -> Int {
-    return operand1 * operand2
+func multiply(left: Int, right: Int) -> Int {
+    return left * right
 }
 
-func divide(operand1: Int, operand2: Int) -> Int {
-        return operand1 / operand2
+func divide(left: Int, right: Int) -> Int {
+        return left / right
 }
 
-func math(operand1: Int, operand2: Int, op: (Int, Int) -> Int) -> Int {
-    return op(operand1, operand2)
+func mathOperation(left: Int, right: Int, operation: (Int, Int) -> Int) -> Int {
+    return operation(left, right)
 }
 
-func add2(array: [Int]) -> Int {
+func add(array: [Int]) -> Int {
     var sum: Int = 0
     sum = array.reduce(0, +)
     return sum
 }
 
-func multiply2(array: [Int]) -> Int {
+func multiply(array: [Int]) -> Int {
     var product: Int
     product = array.reduce(1, *)
     return product
